@@ -6,6 +6,10 @@ Repositório demonstrativo de como funcionam os algoritmos mais comuns no mundo 
 - Demonstração da complexidade em Big-O
 - Feito em C# / .NET (funciona em qualquer versão do .NET Core)
 
+# Exercicios
+Decidir que vou registrar as resoluções dos exercícios aqui propostos no livro, pois assim posso fixar melhor os conceitos apresentados.
+Também é interessante pontuar que estou realizando um re-leitura desse livro após ter tido 3 anos de experiencia com programação e estou fixando e compreendendo melhor e completamente os conceitos apresentados.
+
 ## Como executar
 
 ```bash
