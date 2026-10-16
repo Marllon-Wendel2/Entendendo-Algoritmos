@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using algoritm.utils;
@@ -77,7 +78,36 @@ namespace algoritm.algoritm
                 return name;
 
             }
+        }
 
+        private int HashFuction(string value, int hashSize)
+        {
+            value = value.ToLower();
+            int sum = 0;
+
+            foreach (char c in value)
+            {
+                if (c >= 'a' && c <= 'z')
+                {
+                    int index = c - 'a';
+                    sum += GetPrime(index);
+                }
+            }
+
+            return sum % hashSize;
+
+
+        }
+
+        private int GetPrime(int index)
+        {
+            int[] primes = {
+                2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
+                31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+                73, 79, 83, 89, 97, 101
+            };
+
+            return primes[index];
         }
     }
 }
